@@ -4,7 +4,7 @@ import pepper_kinematics as k
 import naoqi
 
 host = "localhost"
-port = 50095
+port = 51669
 
 
 def calc_jacob(angles):
