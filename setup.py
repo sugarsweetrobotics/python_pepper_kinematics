@@ -3,7 +3,7 @@ import sys
 
 
 setup(name='pepper_kinematics',
-      version='0.0.1',
+      version='0.0.3',
       url = 'http://www.sugarsweetrobotics.com/',
       author = 'ysuga',
       author_email = 'ysuga@ysuga.net',
