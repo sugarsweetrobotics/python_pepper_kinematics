@@ -43,8 +43,15 @@ def transZ(th, x, y, z):
     
 def right_arm_get_position(angles):
     return calc_fk_and_jacob(angles, jacob=False, right=True)
+
 def left_arm_get_position(angles):
     return calc_fk_and_jacob(angles, jacob=False, right=False)
+
+def right_arm_set_position(angles, target_pos, target_ori, epsilon=0.0001):
+    return _calc_inv_pos(angles, target_pos, target_ori, epsilon, right=True)
+
+def left_arm_set_position(angles, target_pos, target_ori, epsilon = 0.0001):
+    return _calc_inv_pos(angles, target_pos, target_ori, epsilon, right=False)
 
 def calc_fk_and_jacob(angles, jacob=True, right=True):
     _L1_ = -L1 if right else L1
@@ -101,11 +108,6 @@ def calc_fk_and_jacob(angles, jacob=True, right=True):
     J = np.c_[J1, J2, J3, J4, J5]
     return pos, ori, J
 
-def right_arm_set_position(angles, target_pos, target_ori, epsilon=0.0001):
-    return _calc_inv_pos(angles, target_pos, target_ori, epsilon, right=True)
-
-def left_arm_set_position(angles, target_pos, target_ori, epsilon = 0.0001):
-    return _calc_inv_pos(angles, target_pos, target_ori, epsilon, right=False)
 
 def _calc_inv_pos(angles, target_pos, target_ori, epsilon, right=True):
     p  = np.array([0,0,0,1])
