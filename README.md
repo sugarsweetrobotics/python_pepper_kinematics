@@ -39,7 +39,7 @@ Originally, Pepper does not provide any inverse kinematics function. This provid
     sudo pip install pepper_kinematics
 
 ## Copyright
-author: Yuki Suga
-copyright: Yuki Suga @ ssr.tokyo
-license: GPLv3
+* author: Yuki Suga
+* copyright: Yuki Suga @ ssr.tokyo
+* license: GPLv3
 
