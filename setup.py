@@ -12,7 +12,7 @@ setup(name='pepper_kinematics',
       packages = find_packages("pepper_kinematics"),
       py_modules = ["pepper_kinematics"],
       license = 'GPLv3',
-      install_requires = [numpy],
+      install_requires = ['numpy'],
       classifiers = [
         'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
