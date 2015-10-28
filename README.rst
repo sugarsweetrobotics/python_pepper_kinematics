@@ -1,11 +1,13 @@
-# pepper_kinematics
+pepper_kinematics
+=====================
 
-## Description 
+Description 
+---------------------
 
 Originally, Pepper does not provide any inverse kinematics function. This provides simple inverse kinematics funciton.
 
-## Example
-
+Example
+---------------------
     """
     Move work_pose first, then move 5 centimeters toward left (y axis positive side).
     """
@@ -35,10 +37,12 @@ Originally, Pepper does not provide any inverse kinematics function. This provid
        m.setAngles(pk.left_arm_tags, target_angles, 1.0)
 
 
-## How to install
+How to install
+---------------------
     sudo pip install pepper_kinematics
 
-## Copyright
+Copyright
+---------------------
 * author: Yuki Suga
 * copyright: Yuki Suga @ ssr.tokyo
 * license: GPLv3
