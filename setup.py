@@ -3,14 +3,14 @@ import sys
 
 
 setup(name='pepper_kinematics',
-      version='0.0.5',
+      version='0.0.6',
       url = 'http://www.sugarsweetrobotics.com/',
       author = 'ysuga',
       author_email = 'ysuga@ysuga.net',
       description = 'Pepper Inverse/Forward Kinematics library',
       download_url = 'https://github.com/sugarsweetrobotics/python_pepper_kinematics',
-      packages = find_packages("pepper_kinematics"),
-      py_modules = ["pepper_kinematics"],
+      packages = ["pepper_kinematics"],
+      #py_modules = ["pepper_kinematics"],
       license = 'GPLv3',
       install_requires = ['numpy'],
       classifiers = [
